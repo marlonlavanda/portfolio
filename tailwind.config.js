@@ -7,8 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "mlr-navy": "#01273E",
-        "mlr-sky": "#4CC7E8",
+        "mlr-primary": "#1A3257",
+        "mlr-secondary": "#72519C",
+        "mlr-secondary-light": "#f0e7ec",
+        "mlr-secondary-dark": "#684269",
+        "mlr-accent": "#62C8F2",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        gravitas: ["Gravitas One"],
       },
     },
   },
