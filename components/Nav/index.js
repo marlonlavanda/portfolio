@@ -29,8 +29,8 @@ export default function Nav() {
   const currentRoute = router && router.route
 
   return (
-    <nav>
-      <ul className="flex  h-[90px] text-white font-medium">
+    <nav className="hidden lg:block">
+      <ul className="flex  h-[90px] dark:text-white font-medium">
         {navLinks
           ? navLinks.map((route) => (
               <li
