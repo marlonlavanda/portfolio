@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="bg-mlr-primary backdrop-blur-sm dark:bg-black/10  py-10 px-6 w-full max-w-[700px] rounded-xl shadow-md dark:shadow-none">
+    <div className="bg-mlr-primary dark:bg-white/10 py-10 px-6 w-full max-w-[700px] rounded-xl shadow-md dark:shadow-none">
       <h3 className="text-center text-white">Contact Form</h3>
       <form action="" className="px-6">
         <div className="flex flex-col mb-4">

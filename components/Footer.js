@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="py-6 w-screen max-w-full flex justify-center items-center">
-      <div className="container flex flex-col lg:flex-row items-center lg:justify-between gap-4 lg:gap-0">
+      <div className="container flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-0">
         <div>
           <span className="font-black text-2xl">mlr</span>
         </div>

@@ -6,6 +6,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    container: {
+      md: "700px",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "px-6",
+        md: "px-12",
+        xl: "px-16",
+      },
+    },
+
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }
