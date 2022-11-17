@@ -24,5 +24,11 @@ module.exports = {
     "react/react-in-jsx-scope": RULES.OFF,
     "no-var": RULES.OFF,
     "no-new": RULES.OFF,
+    "react/no-unknown-property": [
+      2,
+      {
+        ignore: ["jsx"],
+      },
+    ],
   },
 }

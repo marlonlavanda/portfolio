@@ -41,9 +41,9 @@ function Moon(props) {
 
 export default function DarkModeSwitch() {
   const [mounted, setMounted] = useState(false)
-  const [enabled, setEnabled] = useState(false)
-
   const { systemTheme, theme, setTheme } = useTheme()
+
+  const [enabled, setEnabled] = useState(false)
   const handleClickEnabled = () => {
     if (!mounted) return null
     const currentTheme = theme === "system" ? systemTheme : theme

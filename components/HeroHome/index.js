@@ -24,7 +24,7 @@ export default function HeroHome() {
             </div>
             <div className="hidden lg:flex lg:gap-4 lg:pt-8">
               <a
-                href="https://github.com/omar-moquete"
+                href="https://github.com/marlonlavanda"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -33,7 +33,7 @@ export default function HeroHome() {
                 </svg>
               </a>
               <a
-                href="https://github.com/omar-moquete"
+                href="https://www.linkedin.com/in/marlon-lavanda/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -42,7 +42,7 @@ export default function HeroHome() {
                 </svg>
               </a>
               <a
-                href="https://github.com/omar-moquete"
+                href="https://twitter.com/LavandaMarlon"
                 target="_blank"
                 rel="noreferrer"
               >
