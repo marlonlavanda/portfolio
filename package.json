@@ -10,8 +10,10 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@formspree/react": "^2.4.1",
     "@headlessui/react": "^1.7.4",
     "@heroicons/react": "^2.0.13",
+    "graphql-request": "^5.0.0",
     "next": "^13.0.0",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",

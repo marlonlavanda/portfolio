@@ -1,7 +1,8 @@
+import Link from "next/link"
 export default function HeroHome() {
   return (
-    <section className="w-screen max-w-full h-auto lg:h-[82vh] flex justify-center">
-      <div className="container px-6 flex gap-6 flex-col-reverse lg:flex-row items-center">
+    <section className="w-screen max-w-full h-auto   md:h-[82vh] flex justify-center">
+      <div className="container px-6 flex gap-6 flex-col-reverse lg:flex-row justify-center lg:items-center">
         <div className="w-full lg:w-1/2">
           <div className="text-center lg:text-left">
             <p className="dark:text-mlr-accent text-xl font-medium">
@@ -22,6 +23,14 @@ export default function HeroHome() {
                 HTML5, CSS3, and JavaScript.
               </p>
             </div>
+            <div className="flex gap-2 justify-center mt-4 lg:hidden">
+              <button className="py-2 px-4 bg-mlr-accent rounded-full">
+                <Link href="/projects">My work</Link>
+              </button>
+              <button className="py-2 px-4 bg-mlr-accent rounded-full">
+                <Link href="/contact">Contact</Link>
+              </button>
+            </div>
             <div className="hidden lg:flex lg:gap-4 lg:pt-8">
               <a
                 href="https://github.com/marlonlavanda"
@@ -41,6 +50,10 @@ export default function HeroHome() {
                   <use href="icons.svg#linkedin"></use>
                 </svg>
               </a>
+              <img
+                src="https://github.com/danielcranney/profileme-dev/blob/main/public/icons/socials/linkedin.svg"
+                alt=""
+              />
               <a
                 href="https://twitter.com/LavandaMarlon"
                 target="_blank"
