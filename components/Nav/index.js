@@ -1,28 +1,6 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
-
-const navLinks = [
-  {
-    slug: "home",
-    name: "Home",
-    route: "/",
-  },
-  {
-    slug: "about",
-    name: "About",
-    route: "/about",
-  },
-  {
-    slug: "projects",
-    name: "Projects",
-    route: "/projects",
-  },
-  {
-    slug: "contact",
-    name: "Contact",
-    route: "/contact",
-  },
-]
+import { navLinks } from "../../utils/data"
 
 export default function Nav() {
   const router = useRouter()

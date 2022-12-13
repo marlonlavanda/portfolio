@@ -19,7 +19,7 @@ export default function Contact() {
       <h3 className="text-2xl font-bold text-center text-white mb-6">
         Contact Form
       </h3>
-      <form className="px-6" onSubmit={handleSubmit}>
+      <form className="md:px-6" onSubmit={handleSubmit}>
         <div className="flex flex-col mb-6">
           <label htmlFor="name" className={formStyles.label}>
             Name

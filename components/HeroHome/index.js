@@ -16,18 +16,18 @@ export default function HeroHome() {
             <h2 className="text-2xl lg:text-4xl font-black">
               Front End Engineer
             </h2>
-            <div className="pt-4">
-              <p className=" max-w-[500px]">
+            <div className="pt-4 ">
+              <p className="text-center lg:text-left max-w-full md:max-w-[500px] mx-auto xl:mx-0">
                 {"I'm"} a front-end developer with a passion for building
                 awesome things for the web using core technologies such as
                 HTML5, CSS3, and JavaScript.
               </p>
             </div>
-            <div className="flex gap-2 justify-center mt-4 lg:hidden">
-              <button className="py-2 px-4 bg-mlr-accent rounded-full">
-                <Link href="/projects">My work</Link>
+            <div className="flex gap-4 justify-center mt-4 lg:hidden">
+              <button className="py-2 px-4 bg-mlr-accent rounded-md">
+                <Link href="/projects">Projects</Link>
               </button>
-              <button className="py-2 px-4 bg-mlr-accent rounded-full">
+              <button className="py-2 px-4 bg-mlr-accent rounded-md">
                 <Link href="/contact">Contact</Link>
               </button>
             </div>
