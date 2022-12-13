@@ -7,13 +7,13 @@ export default function MobileNav({ isOpen, setCloseMenu }) {
   const currentRoute = router && router.route
   const goToPageAndClose = (route) => {
     router.push(`${route}`)
-    setCloseMenu(false)
+    setCloseMenu(!isOpen)
   }
 
   return (
     <>
-      <div className={`container ${isOpen ? "active" : ""} bg-mlr-primary`}>
-        <div className="wrapper">
+      <div className={`container ${isOpen ? "active" : ""}`}>
+        <div className="wrapper  bg-mlr-primary">
           <div className="flex flex-col px-4 md:px-6">
             <div className="h-[90px] flex items-center">
               <XMarkIcon
@@ -50,9 +50,8 @@ export default function MobileNav({ isOpen, setCloseMenu }) {
       </div>
       <style jsx>{`
         .container {
-          width: 50vw;
+          width: 100vw;
           max-width: 100%;
-          box-sizing: border-box;
           position: fixed;
           top: 0;
           bottom: 0;
@@ -62,23 +61,16 @@ export default function MobileNav({ isOpen, setCloseMenu }) {
           transition: transform 0.5s ease;
           display: flex;
           justify-content: flex-end;
+          background: transparent;
         }
         .container.active {
-          opacity: 1;
-          visibility: visible;
-          max-height: 100%;
-          transform: translateX(200%);
+          transform: translateX(0%);
         }
         .wrapper {
-          width: 100%;
+          width: 50%;
+
           box-sizing: border-box;
           height: 100%;
-        }
-      `}</style>
-      <style jsx>{`
-        body,
-        html {
-          overflow: ${isOpen ? "hidden" : ""};
         }
       `}</style>
     </>
