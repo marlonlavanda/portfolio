@@ -67,6 +67,24 @@ export interface Page {
     metaDesc: string
     title: string
   }
+  pageBuilder: PageBuilder
+}
+
+export interface PageBuilder {
+  pageLayouts: PageLayout[]
+}
+
+export interface PageLayout {
+  fieldGroupName: string
+  text?: string
+  background?: string
+  image?: {
+    node: {
+      databaseId: string
+      sourceUrl: string
+      slug: string
+    }
+  }
 }
 
 export interface Post {
@@ -102,7 +120,7 @@ export interface Post {
     ]
   }
   featuredImage: FeaturedImage
-  seo: {
+  seo?: {
     metaDesc: string
     title: string
   }
@@ -142,6 +160,15 @@ export interface Book {
     metaDesc: string
     title: string
   }
+}
+
+export interface Project {
+  databaseId: string
+  date: string
+  modified: string
+  slug: string
+  title: string
+  excerpt: string
 }
 
 export interface AllPages {

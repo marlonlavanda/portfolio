@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation"
 
-import getAllPosts from "@/lib/queries/getAllPosts"
+// import getAllPosts from "@/lib/queries/getAllPosts"
 import getPageBySlug from "@/lib/queries/getPageBySlug"
-
+import PageLayouts from "@/components/PageLayouts"
 /**
  * The homepage route.
  *
@@ -11,10 +11,9 @@ import getPageBySlug from "@/lib/queries/getPageBySlug"
 
 export default async function Home() {
   const homepage = await getPageBySlug("homepage")
-  const posts = await getAllPosts()
-
+  // const posts = await getAllPosts()
   // No data? Bail...
-  if (!posts || !posts.length || !homepage) {
+  if (!homepage) {
     notFound()
   }
 
@@ -23,6 +22,7 @@ export default async function Home() {
       <article>
         <h1 dangerouslySetInnerHTML={{ __html: homepage.title }} />
         <div dangerouslySetInnerHTML={{ __html: homepage.content }} />
+        <PageLayouts layouts={homepage?.pageBuilder?.pageLayouts} />
       </article>
     </main>
   )

@@ -28,6 +28,26 @@ export default async function getPageBySlug(slug: string) {
             name
           }
         }
+        seo {
+          metaDesc
+          title
+        }
+        pageBuilder {
+          pageLayouts {
+            fieldGroupName
+            ... on PageBuilderPageLayoutsHeroLayout {
+              text
+              background
+              image {
+                node {
+                  databaseId
+                  sourceUrl
+                  slug
+                }
+              }
+            }
+          }
+        }
       }
     }
   `

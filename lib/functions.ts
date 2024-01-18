@@ -45,12 +45,6 @@ export async function fetchGraphQL<T = any>(
       },
     })
 
-    // If the response status is not 200, throw an error.
-    if (!response.ok) {
-      console.error("Response Status:", response.status)
-      throw new Error(response.statusText)
-    }
-
     // Read the response as JSON.
     const data = await response.json()
 
@@ -58,6 +52,12 @@ export async function fetchGraphQL<T = any>(
     if (data.errors) {
       console.error("GraphQL Errors:", data.errors)
       throw new Error("Error executing GraphQL query")
+    }
+
+    // If the response status is not 200, throw an error.
+    if (!response.ok) {
+      console.error("Response Status:", response.status)
+      throw new Error(response.statusText)
     }
 
     // Finally, return the data.

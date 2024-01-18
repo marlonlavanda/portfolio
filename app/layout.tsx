@@ -2,6 +2,8 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import config from "@/lib/config"
 
+import "./global.css"
+
 /**
  * Root layout component.
  *

@@ -2,14 +2,13 @@ import { fetchGraphQL } from "@/lib/functions"
 import { Post } from "@/lib/types"
 
 /**
- * Fetch all blog posts.
+ * Fetch all projects.
  */
-export default async function getAllPosts() {
+export default async function getAllProjects() {
   const query = `
-    query GetAllPosts {
-      posts(where: {status: PUBLISH}) {
+    query GetAllProjects {
+      projects(where: {status: PUBLISH}) {
         nodes {
-          commentCount
           databaseId
           date
           modified
@@ -21,8 +20,8 @@ export default async function getAllPosts() {
               altText
               sourceUrl
               mediaDetails {
-                height
-                width
+                  height
+                  width
               }
             }
           }
@@ -37,5 +36,5 @@ export default async function getAllPosts() {
 
   const response = await fetchGraphQL(query)
 
-  return response.data.posts.nodes as Post[]
+  return response.data.projects.nodes as Post[]
 }
