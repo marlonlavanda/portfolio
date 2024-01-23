@@ -16,5 +16,6 @@ module.exports = {
     ],
     "no-descending-specificity": null,
     "selector-class-pattern": null,
+    "no-invalid-position-at-import-rule": false,
   },
 }
