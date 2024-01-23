@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+
+@font-face {
+  font-family: "Gravitas One";
+  src: url("../fonts/Gravitas-One.woff2") format("opentype");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-mlr-primary text-mlr-primary dark:text-white transition ease-in-out delay-150;
+  }
+
+  ::selection {
+    @apply text-white bg-indigo-500;
+  }
+
+  .btn {
+    @apply inline-block px-5 py-3 rounded-lg hover:bg-indigo-600 transition duration-300 shadow-lg bg-indigo-500 text-white capitalize tracking-wider font-semibold text-sm sm:text-xl focus:outline-none focus:ring-4 focus:ring-indigo-500 focus:ring-opacity-50 whitespace-nowrap;
+  }
+}
+
+@layer components {
+  .greetings {
+    @apply text-xl font-medium;
+  }
+
+  .name {
+    @apply text-4xl lg:text-6xl font-gravitas pt-4 mb-4;
+  }
+
+  .role {
+    @apply text-2xl lg:text-4xl font-black;
+  }
+}

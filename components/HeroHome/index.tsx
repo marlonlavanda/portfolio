@@ -1,11 +1,14 @@
-import Link from "next/link"
-export default function HeroHome() {
+// import Link from "next/link"
+export default function HeroHome(props) {
+  const { text, image, background } = props
+  console.log(image)
   return (
     <section className="w-screen max-w-full h-auto   md:h-[82vh] flex justify-center">
       <div className="container px-6 flex gap-6 flex-col-reverse lg:flex-row justify-center lg:items-center">
         <div className="w-full lg:w-1/2">
           <div className="text-center lg:text-left">
-            <p className="dark:text-mlr-accent text-xl font-medium">
+            <div dangerouslySetInnerHTML={{ __html: text }}></div>
+            {/* <p className="dark:text-mlr-accent text-xl font-medium">
               Hi there!
             </p>
             <div className="text-4xl lg:text-6xl font-gravitas pt-4 mb-4">
@@ -30,47 +33,14 @@ export default function HeroHome() {
               <button className="py-2 px-4 bg-mlr-accent rounded-md">
                 <Link href="/contact">Contact</Link>
               </button>
-            </div>
-            <div className="hidden lg:flex lg:gap-4 lg:pt-8">
-              <a
-                href="https://github.com/marlonlavanda"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg className="w-8 h-8">
-                  <use href="icons.svg#github"></use>
-                </svg>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/marlon-lavanda/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg className="w-8 h-8">
-                  <use href="icons.svg#linkedin"></use>
-                </svg>
-              </a>
-              <img
-                src="https://github.com/danielcranney/profileme-dev/blob/main/public/icons/socials/linkedin.svg"
-                alt=""
-              />
-              <a
-                href="https://twitter.com/LavandaMarlon"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg className="w-8 h-8">
-                  <use href="icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex justify-center">
           <div className="max-w-[350px] lg:max-w-[600px]">
             <img
-              src="marlon-composition-website.png"
-              alt="marlon-composition-website"
+              src={image?.node?.sourceUrl}
+              alt={image?.node?.slug}
               className="w-full h-full"
             />
           </div>

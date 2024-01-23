@@ -1,3 +1,6 @@
+/**
+ * Footer component.
+ */
 export default function Footer() {
   return (
     <footer className="py-6 w-screen max-w-full flex justify-center items-center">
