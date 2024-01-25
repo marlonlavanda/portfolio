@@ -21,6 +21,7 @@ export default async function Home() {
     <main className="flex flex-col gap-8">
       <article>
         <h1 dangerouslySetInnerHTML={{ __html: homepage.title }} />
+        <h2>Hello</h2>
         <div dangerouslySetInnerHTML={{ __html: homepage.content }} />
         <PageLayouts layouts={homepage?.pageBuilder?.pageLayouts} />
       </article>

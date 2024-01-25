@@ -1,5 +1,10 @@
 module.exports = {
-  extends: ['next/core-web-vitals', 'prettier'],
+  extends: [
+    'next/core-web-vitals',
+    'prettier',
+    'plugin:testing-library/react',
+    'plugin:jest-dom/recommended'
+  ],
   rules: {
     '@next/next/no-img-element': 'off',
     "react/react-in-jsx-scope": "off",
