@@ -60,7 +60,6 @@ export interface Page {
   modified: string
   slug: string
   title: string
-  excerpt: string
   content: string
   featuredImage: FeaturedImage
   seo: {
@@ -100,7 +99,6 @@ export interface Post {
   modified: string
   slug: string
   title: string
-  excerpt: string
   content: string
   commentCount: number
   categories: {
@@ -153,7 +151,6 @@ export interface Book {
   modified: string
   slug: string
   title: string
-  excerpt: string
   content: string
   featuredImage: FeaturedImage
   seo: {
@@ -168,7 +165,6 @@ export interface Project {
   modified: string
   slug: string
   title: string
-  excerpt: string
 }
 
 export interface AllPages {

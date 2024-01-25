@@ -13,7 +13,6 @@ export default async function getAllPages() {
           databaseId
           date
           modified
-          excerpt(format: RENDERED)
           slug
           featuredImage {
             node {

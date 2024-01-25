@@ -4,7 +4,6 @@ function PageLayouts({ layouts }) {
   if (!layouts) {
     return <p>No layouts found</p>
   }
-  console.log("layouts", layouts)
 
   return (
     <>

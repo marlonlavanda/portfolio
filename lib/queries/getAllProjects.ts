@@ -14,7 +14,6 @@ export default async function getAllProjects() {
           modified
           title
           slug
-          excerpt(format: RENDERED)
           featuredImage {
             node {
               altText
